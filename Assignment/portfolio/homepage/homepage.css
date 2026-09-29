@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+.img {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.459)),
+        url(mypic5.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-top: 250px;
+      text-align: center;
+      height: 400px;
+    }
+
+.portfolio{
+      color: white;
+      font-size: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding-right: 17px;
+    }
+
+    .nav-bar {
+        background-color: blue;
+        padding: 13px;
+        text-align: center;
+    }
+
+    a:hover {
+        border-bottom: 2px solid rgb(8, 8, 134);
+        color: rgb(230, 230, 230);
+        text-shadow: 0 0 7px black;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 210px;
+        background-color: rgb(244, 244, 248);
+    }
+
+    .name {
+        margin-right: 70px;
+        padding: 10px;
+        word-spacing: 5px;
+    }

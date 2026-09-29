@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+        a {
+        text-decoration: none;
+        color: white;
+        padding-right: 17px;
+    }
+
+    .nav-bar {
+        background-color: blue;
+        padding: 13px;
+        text-align: center;
+    }
+
+    a:hover {
+        border-bottom: 2px solid rgb(8, 8, 134);
+        color: rgb(230, 230, 230);
+        text-shadow: 0 0 7px black;
+    }
+
+    table, tr, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    div {
+        text-align: center;
+        padding: 30px;
+    }
+
+    th {
+        background-color: rgb(135, 135, 235);
+    }

@@ -1,0 +1,37 @@
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+    width: 90%;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+.scores {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+td:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+.Grades {
+    border-radius: 10px;
+    background-color: rgb(27, 235, 27);
+}
+ 
+#Grades {
+    border-radius: 10px;
+    background-color: red;
+}

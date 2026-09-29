@@ -1,0 +1,67 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px 10px 0px;
+    background-color: #0c0c33;
+    border-bottom: 1px solid white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:visited {
+    color: blue;
+}
+
+.home {
+    background-color: #0c0c33;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.name {
+    margin-right: 75px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    margin-right: 100px;
+}
+
+.skill {
+    display: flex;
+    background-color: #f0f0f8;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.skills {
+    margin: 0px 60px 0px 60px;
+}
+
+.Contact {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}

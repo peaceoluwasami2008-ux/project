@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+        a {
+        text-decoration: none;
+        color: white;
+        padding-right: 17px;
+    }
+
+    .nav-bar {
+        background-color: blue;
+        padding: 13px;
+        text-align: center;
+    }
+
+    a:hover {
+        border-bottom: 2px solid rgb(8, 8, 134);
+        color: rgb(230, 230, 230);
+        text-shadow: 0 0 7px black;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 25px;
+        text-shadow: 0 0 2px black;
+    }
+
+    .card-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        background-color: aliceblue;
+        width: 300px;
+        height: 150px;
+        text-align: center;
+        margin-right: 15px;
+        border: 1px solid rgb(218, 215, 215);
+        box-shadow: 0 0 5px rgb(187, 190, 192);
+        border-radius: 5px;
+    }
+
+    main {
+        margin: 0 30px;
+    }
+
+    h3 {
+        padding: 20px;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li {
+        padding: 25px;
+    }

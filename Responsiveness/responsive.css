@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    /* position: fixed; */
+    /* width: 100%; */
+}
+
+.website {
+    font-size: 25px;
+    cursor: pointer;
+}
+ #menu-toggle {
+    display: none;
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: aqua;
+}
+
+
+.hero {
+    /* background-image: url('https://miro.medium.com/1*aYFz_SA6m-iEgcNS99cCrg.jpeg'); */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://miro.medium.com/1*aYFz_SA6m-iEgcNS99cCrg.jpeg');
+    background-repeat: no-repeat;
+    height: 87vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.travel {
+    color: white;
+    font-size: 35px;
+    margin: 20px 0;
+}
+.text{
+    color: white;
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.hero-section {
+    /* width: 50%; */
+    margin-left: 13%;
+    padding-top: 10%;
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width:600px) {
+
+    .icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 18px;
+        top: 12%;
+        box-shadow: 0 2px 5px rgba(235, 126, 126, 0.596);
+        text-align: center;
+        padding: 13px 30px;
+    }
+
+    .nav-links a {
+        color: white;
+        font-size: 20px;
+    }
+
+
+    #menu-toggle:checked ~ .nav-links {
+        display:flex;
+        flex-direction: column;
+    }
+
+    
+    .hero-section {
+        text-align: center;
+        padding-top: 20%;
+        margin: 0;
+
+    }
+
+.hero {
+    height: 100vh;
+}
+}
+
