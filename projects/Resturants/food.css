@@ -288,15 +288,20 @@ header {
     border: 2px dotted black;
     text-align: center;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 span {
     font-size: 17px;
 }
 
 .icons {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .carts1 {
@@ -469,13 +474,13 @@ span {
 .download-apple {
     background-color: #c5a503;
     padding: 3px 20px;
-    border-radius: 20px;
+    border-radius: 7px;
 }
 
 .download-google {
     border: 3px solid #FFD000;
     padding: 3px 15px;
-    border-radius: 20px;
+    border-radius: 7px;
 }
 
 .download-span {
@@ -579,4 +584,139 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+#meun-toggle {
+    display: none;
+}
+
+.nicon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@media (max-width:1200px) {
+    .nicon {
+        display: block;
+        justify-content: right;
+    }
+
+    .nav-text {
+        display: none;
+        position: absolute;
+        right: 7px;
+        top: 15%;
+        text-align: center;
+        padding: 13px 30px;
+        height: 100px;
+    }
+
+    #meun-toggle:checked ~ .nav-text, .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .main1-cards, .main2-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 30px;
+    }
+
+    .reservation {
+        margin-top: 300px;
+        height: 500px;
+    }
+
+    .chef-img {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /* .chef4-text {
+        display: flex;
+        text-align: center;
+    } */
+
+    .download {
+        width: 1200px;
+        height: 800px;
+    }
+
+    .downloads {
+        height: 1300px;
+    }
+
+    .download-img {
+        padding-left: 50px;
+    }
+
+    .download-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .download-apple {
+        padding: 3px 40px;
+        display: flex;
+    } */
+
+    footer {
+        height: 600px;
+    }
+
+    .footer-text {
+        display: flex;
+        gap: 150px;
+    }
+
+    .service {
+        display: flex;
+        gap: 30px;
+        height: 1500px;
+    }
+}
+
+@media (max-width:878px) {
+    .meun-btn {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .service-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service {
+        height: 990px;
+    }
+
+    .footer-text {
+        display: flex;
+        gap: 120px;
+    }
+
 }
