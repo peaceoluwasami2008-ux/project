@@ -93,6 +93,85 @@
     console.log(meunItem.order());
     meunItem.isAvailable = false;
     console.log(meunItem.order());
+
+    const account = {
+      name: "shalom",
+      balance: 5000,
+      pin: "1234",
+
+      deposit(amount) {
+        this.balance += amount
+        return "New balance is #" + this.balance;
+      },
+
+      withdraw(amount) {
+        if (amount > this.balance) {
+          return "insufficient funds"
+        } else {
+          this.balance -= amount
+          return "New balance is #" + this.balance;
+        }
+      },
+
+      checkBalance() {
+        return "Balance is #" + this.balance
+      }
+    }
+
+    console.log(account.deposit(2000));
+    console.log(account.withdraw(1000));
+    console.log(account.withdraw(10000));
+
+    const order = {
+      orderId: 101,
+      customer: {
+        name: "ade",
+        email: "olu@gmail.com",
+        address: "oke-onit",
+      },
+      product: {
+        name: "knife",
+        price: 1000,
+        quanitity: 2,
+      },
+      isDelivered: false,
+
+      totalPrice() {
+        this.product.price * this.product.quatity
+      },
+
+      summary() {
+        return "Order 101: " + this.customer.name + " ordered 2x knife" +  this.product.price * this.product.quatity
+      }
+    };
+
+    const customers = order.customer.name;
+    console.log(customers);
+
+    const book = {
+      title: "JS for Beginners",
+      author: "Jhon Doe",
+      pages: 200,
+      isRead: false,
+
+      readBook() {
+        this.isRead = true;
+        return this.isRead
+      },
+
+      addInfo (publisher, year) {
+        Object.assign(this, {
+          publisher: publisher,
+          year: year
+        });
+      }
+    };
+
+    book.readBook();
+    console.log(book.isRead);
+
+    book.addInfo("Tech Books", 2026);
+    console.log(book)
     </script>
   </body>
 </html>
